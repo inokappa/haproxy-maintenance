@@ -16,10 +16,6 @@ function haproxy_maint() {
 }
 
 case $1 in
-  maint_all)
-    elb_detach
-    haproxy_maint disable
-    ;;
   status_haproxy)
     haproxy_maint status
     ;;
